@@ -1,0 +1,11 @@
+---
+- name: "assemble configuration fragments"
+  assemble:
+    src: "{{ bgp_config_fragments_path }}"
+    dest: "{{ bgp_config_file }}"
+
+- name: "clean folder containing configuration fragments"
+  when: bgp_config_fragments_cleanup
+  file:
+    path: "{{ bgp_config_fragments_path }}"
+    state: "absent"

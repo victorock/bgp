@@ -1,0 +1,5 @@
+---
+- name: "generate folder structure for configuration fragments"
+  file:
+    path: "{{ bgp_config_fragments_path }}"
+    state: "directory"

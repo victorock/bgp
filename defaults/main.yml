@@ -1,0 +1,5 @@
+---
+bgp_config_file: "{{ role_path }}/files/{{ inventory_hostname }}/bgp.cfg"
+bgp_config_fragments_path: "{{ role_path }}/files/{{ inventory_hostname }}/bgp"
+bgp_config_fragments_cleanup: true
+bgp_asn: "65001"

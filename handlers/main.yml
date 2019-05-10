@@ -1,0 +1,4 @@
+---
+- name: "trigger assemble"
+  include_tasks: "{{ role_path }}/includes/assemble.yaml"
+  listen: "bgp_assemble_fragments"

@@ -1,0 +1,9 @@
+---
+- name: "initialize function"
+  include_tasks: "includes/init.yaml"
+
+- name: "Include bgp process tasks"
+  include_role:
+    name: "{{ ansible_network_provider }}"
+    tasks_from: "bgp/process.yaml"
+    defaults_from: "bgp/process.yaml"

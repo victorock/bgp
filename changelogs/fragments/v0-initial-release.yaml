@@ -1,0 +1,4 @@
+---
+major_changes:
+  - Initial release of the ``bgp`` Ansible role.
+  - This role provides functions to generate BGP configurations.
